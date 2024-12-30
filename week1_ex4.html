@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = viewpart content = "width=device-width, initial-scale=1.0">
+        <title>Class와 ID 구분, CSS Selector 예제 코드</title>
+        <style>
+            /* 1. 전체 선택자 */
+            * {
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            /* 2. 태그 선택자 */
+            p {
+                font-size 16px;
+                color: #555;
+            }
+            /* 3. 클래스 선택자 */
+            .highlight {
+                background-color: yellow;
+                font-weight: bold;
+            }
+
+            */ 4. ID 선택자 */
+            #unique-box {
+                background-color: lightgreen;
+                border: 2px solid # 4CAF50;
+                padding: 10px;
+                margin: 10px 0;
+            }
+
+            */ 5. 자식 선택자 */
+            div > p {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main title">Class와 ID</h1>
+        <p class="highlight">이 문장은 highlight클래스 안에 있음.</p>
+        <div id="unique-box">
+            <p>이 문장은 unique-box 안에 있음.</p>
+        </div>
+        <p>이 문장은 아무것도 적용되지 않음</p>
+
+    </body>
+</html>
